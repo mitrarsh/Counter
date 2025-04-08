@@ -1,0 +1,30 @@
+body{
+    margin-top: 50px;
+    text-align: center;
+
+}
+h1{font-size: 100px;}
+
+
+button{
+    width: 20rem;
+    padding: 4rem;
+    outline: 0;
+    font-size: 5rem;
+    border: none;        /* remove border too if needed */
+    box-shadow: 1px 3px 1px #000
+}
+button:active{
+    box-shadow: 0 0 0 ;
+    background-color: #969696;
+}
+.number{
+    font-size: 5rem;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
