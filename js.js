@@ -7,8 +7,11 @@ var upsies = function(){
     countEl.textContent=parseFloat(countEl.textContent)+1;
 };
 var downsies = function(){
-    countEl.textContent= parseFloat(countEl.textContent)-1;
+    if(parseFloat(countEl.textContent)>0){
+    countEl.textContent= parseFloat(countEl.textContent)-1;};
+    return;
 };
+
 var reset= function(){
     countEl.textContent= 0
 };
