@@ -3,17 +3,24 @@ var plusEl = document.getElementsByClassName("positive")[0];
 var minusEl = document.getElementsByClassName("negative")[0];
 var resetEl = document.getElementById("resetbtn");
 
+var triggerBounce = function(){
+    countEl.classList.add("bounce");
+    setTimeout(function(){countEl.classList.remove("bounce")},300);
+}
+
 var upsies = function(){
     countEl.textContent=parseFloat(countEl.textContent)+1;
+    triggerBounce();
 };
 var downsies = function(){
     if(parseFloat(countEl.textContent)>0){
     countEl.textContent= parseFloat(countEl.textContent)-1;};
-    return;
+    triggerBounce();
 };
 
 var reset= function(){
-    countEl.textContent= 0
+    countEl.textContent= 0;
+    triggerBounce();
 };
 
 plusEl.addEventListener("click",upsies);
