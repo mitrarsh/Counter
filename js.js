@@ -1,6 +1,7 @@
 var countEl = document.getElementsByClassName("number")[0];
 var plusEl = document.getElementsByClassName("positive")[0];
 var minusEl = document.getElementsByClassName("negative")[0];
+var resetEl = document.getElementById("resetbtn");
 
 var upsies = function(){
     countEl.textContent=parseFloat(countEl.textContent)+1;
@@ -8,6 +9,10 @@ var upsies = function(){
 var downsies = function(){
     countEl.textContent= parseFloat(countEl.textContent)-1;
 };
+var reset= function(){
+    countEl.textContent= 0
+};
 
 plusEl.addEventListener("click",upsies);
 minusEl.addEventListener("click",downsies);
+resetEl.addEventListener("click",reset);

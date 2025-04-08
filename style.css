@@ -28,3 +28,9 @@ button:active{
     justify-content: center;
     gap: 2rem;
 }
+#resetbtn{
+    width: 50%;
+    font-size: 3ric;
+    margin-top: 2rem;
+    padding: 2rem;
+}
