@@ -16,6 +16,12 @@ var reset= function(){
     countEl.textContent= 0
 };
 
-plusEl.addEventListener("click",upsies);
-minusEl.addEventListener("click",downsies);
-resetEl.addEventListener("click",reset);
+// plusEl.addEventListener("click",upsies);
+// minusEl.addEventListener("click",downsies);
+// resetEl.addEventListener("click",reset);
+
+document.addEventListener("keydown" ,function(event){
+if(event.key==="ArrowUp"){upsies();}
+else if(event.key==="ArrowDown"){downsies();}
+else if(event.key==="R"||event.key==="r"){reset();}
+});
